@@ -170,20 +170,6 @@ flutter build web --release
 Output: `build/web/` (deployable to any static host — Firebase Hosting,
 GitHub Pages, Netlify, etc.)
 
-## 📸 Screenshots
-
-<!-- Replace these with real screenshots before submitting.
-     Suggested shots: Dashboard, Invoice List, Invoice Form, Invoice
-     Detail (with PDF/Share buttons), Settings. -->
-
-| Dashboard | Invoice List | Invoice Form |
-|---|---|---|
-| _screenshot_ | _screenshot_ | _screenshot_ |
-
-| Invoice Detail | Settings |
-|---|---|
-| _screenshot_ | _screenshot_ |
-
 ## 👤 Author
 
 **Muhammad Abdullah Abrar**
