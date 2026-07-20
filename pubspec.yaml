@@ -1,0 +1,60 @@
+name: invoice_generator_app
+description: A professional Flutter Invoice Generator App (Android + Web).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.1
+
+  # Local database — pure Dart, works on Android/iOS/desktop AND Web
+  # (unlike sqflite, which has no web implementation at all).
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # PDF generation & printing/downloading (both have full web support)
+  pdf: ^3.10.7
+  printing: ^5.11.1
+
+  # Sharing exported files (WhatsApp, Email, etc.) — built from raw
+  # bytes (XFile.fromData) rather than file paths, so it works on Web
+  # too, where there is no filesystem to point a path at.
+  share_plus: ^7.2.1
+
+  # Picking a backup JSON file back in for Restore — supports Web
+  # (native file input) and mobile (native file browser) uniformly.
+  file_picker: ^6.1.1
+
+  # Company logo picker — read as bytes (not a file path) so it works
+  # on Web as well as mobile.
+  image_picker: ^1.0.4
+
+  # Date formatting & number formatting
+  intl: ^0.18.1
+
+  # Unique IDs for invoice line items
+  uuid: ^4.2.1
+
+  # Persisted key-value settings (company info, currency, tax, theme).
+  # Also has a Web implementation (backed by localStorage).
+  shared_preferences: ^2.2.2
+
+  # Typography — a nicer, modern typeface for a more polished UI.
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
